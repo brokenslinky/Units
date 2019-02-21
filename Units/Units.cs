@@ -40,9 +40,9 @@ namespace Units
             {"kNm", kNm}, {"kNM", kNm }, {"knm", kNm}, {"knM", kNm}, {"KNm", kNm}, {"KNM", kNm }, {"Knm", kNm}, {"KnM", kNm}
         };
 
-        public static double Ratio(string unit1, string unit2)
+        public static double Ratio(string unit_1, string unit_2)
         {
-            return unit[unit1] / unit[unit2];
+            return unit[unit_1] / unit[unit_2];
         }
     }
 }
