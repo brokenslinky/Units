@@ -8,8 +8,8 @@ namespace Units
 {
     public class Unit
     {
-        static double lbf = 4.4482216;
-        static double klbf = 4448.2216;
+        static double lbf = 4.4482216153;
+        static double klbf = 4448.2216153;
         static double N = 1.0;
         static double kN = 1000.0;
         static double MN = 1000000.0;
@@ -40,9 +40,15 @@ namespace Units
             {"kNm", kNm}, {"kNM", kNm }, {"knm", kNm}, {"knM", kNm}, {"KNm", kNm}, {"KNM", kNm }, {"Knm", kNm}, {"KnM", kNm}
         };
 
-        public static double Conversion(string unit_1, string unit_2)
+        public static double Conversion(string from_unit, string to_unit)
         {
-            return unit[unit_1] / unit[unit_2];
+            double unit_1;
+            if (!unit.TryGetValue(from_unit, out unit_1))
+                throw new Exception("unit \"" + from_unit + "\" not in library.");
+            double unit_2;
+            if (!unit.TryGetValue(to_unit, out unit_2))
+                throw new Exception("unit \"" + to_unit + "\" not in library.");
+            return unit_1 / unit_2;
         }
     }
 }
