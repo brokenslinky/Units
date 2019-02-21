@@ -36,6 +36,9 @@ namespace Units
             {"lbf*in", lbfin}, {"LBF*IN", lbfin}, {"lbfin", lbfin}, {"LBFIN", lbfin}, {"lb*in", lbfin}, {"LB*IN", lbfin}, {"lbin", lbfin}, {"LBIN", lbfin},
             {"klbf*in", klbfin}, {"kLBF*IN", klbfin}, {"klbfin", klbfin}, {"kLBFIN", klbfin}, {"klb*in", klbfin}, {"kLB*IN", klbfin}, {"klbin", klbfin}, {"kLBIN", klbfin},
             {"Klbf*in", klbfin}, {"KLBF*IN", klbfin}, {"Klbfin", klbfin}, {"KLBFIN", klbfin}, {"Klb*in", klbfin}, {"KLB*IN", klbfin}, {"Klbin", klbfin}, {"KLBIN", klbfin},
+            {"lbf*ft", lbfft}, {"LBF*FT", lbfft}, {"lbfft", lbfft}, {"LBFFT", lbfft}, {"lb*ft", lbfft}, {"LB*FT", lbfft}, {"lbft", lbfft}, {"LBFT", lbfft},
+            {"klbf*ft", klbfft}, {"kLBF*FT", klbfft}, {"klbfft", klbfft}, {"kLBFFT", klbfft}, {"klb*ft", klbfft}, {"kLB*FT", klbfft}, {"klbft", klbfft}, {"kLBFT", klbfft},
+            {"Klbf*ft", klbfft}, {"KLBF*FT", klbfft}, {"Klbfft", klbfft}, {"KLBFFT", klbfft}, {"Klb*ft", klbfft}, {"KLB*FT", klbfft}, {"Klbft", klbfft}, {"KLBFT", klbfft},
             {"Nm", Nm}, {"NM", Nm }, {"nm", Nm}, {"nM", Nm}, // I was hesitant to allow lower-case n to be use (n = nano in SI), but since these are all load units, it should be fine
             {"kNm", kNm}, {"kNM", kNm }, {"knm", kNm}, {"knM", kNm}, {"KNm", kNm}, {"KNM", kNm }, {"Knm", kNm}, {"KnM", kNm}
         };
